@@ -12,6 +12,8 @@
 
             // Imprimimos el resultado en la consola para ver si funciona el formato
             //Console.WriteLine(etiqueta);
+            //Product productPrueba= new Product("Teclado Mecánico");
+            //Console.WriteLine(new Problema3().CompararCopias(10, productPrueba));
         }
     }
 }
