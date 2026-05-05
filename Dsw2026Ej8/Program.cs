@@ -33,6 +33,11 @@
             Console.WriteLine($"Importe Base:{ventaMayorista.ImporteBase}"); // Va a imprimir 100000
             Console.WriteLine($"Importe de Venta por Mayor:{problema5.ObtenerImporteFinal(ventaMayorista)}"); // Va a imprimir 90000
 
+
+            //Problema 6
+            //Problema6 problema6 = new Problema6();
+            //Console.WriteLine(problema6.NormalizarCodigoProducto("ab 123 x ")); // Debería imprimir "AB-123-X"
+
         }
     }
 }
