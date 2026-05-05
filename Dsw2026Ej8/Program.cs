@@ -18,15 +18,21 @@
             //Console.WriteLine(new Problema4().CalcularPromedio(8, null, 9)); // Debería imprimir 8.5
 
 
-            //Problema5 problema5 = new Problema5();
+            Problema5 problema5 = new Problema5();
 
             // Probamos con la hija Retail (sin descuento)
-            //RetailSale ventaNormal = new RetailSale { ImporteBase = 1000m };
-            //Console.WriteLine(problema5.ObtenerImporteFinal(ventaNormal)); // Va a imprimir 1000
+            RetailSale ventaNormal = new RetailSale { ImporteBase = 1000m };
+            Console.WriteLine("------------------Problema 5---------------");
+            Console.WriteLine("................VENTA MINORISTA...............");
+            Console.WriteLine($"Importe Base:{ ventaNormal.ImporteBase }"); // Va a imprimir 1000
+            Console.WriteLine($"Importe de Venta por Menor:{problema5.ObtenerImporteFinal(ventaNormal)}"); // Va a imprimir 1000
 
-            // Probamos con la hija Wholesale (con 10% de descuento)
-            //WholesaleSale ventaMayorista = new WholesaleSale { ImporteBase = 1000m };
-            //Console.WriteLine(problema5.ObtenerImporteFinal(ventaMayorista)); // Va a imprimir 900
+            //Probamos con la hija Wholesale (con 10% de descuento)
+            Console.WriteLine("................VENTA MAYORISTA...............");
+            WholesaleSale ventaMayorista = new WholesaleSale { ImporteBase = 100000m };
+            Console.WriteLine($"Importe Base:{ventaMayorista.ImporteBase}"); // Va a imprimir 100000
+            Console.WriteLine($"Importe de Venta por Mayor:{problema5.ObtenerImporteFinal(ventaMayorista)}"); // Va a imprimir 90000
+
         }
     }
 }
